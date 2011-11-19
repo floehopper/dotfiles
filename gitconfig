@@ -1,0 +1,14 @@
+[user]
+  name = James Mead
+  email = james@floehopper.org
+[core]
+  excludesfile = ~/.gitignore
+[color]
+  ui = auto
+[alias]
+  st = status -sb
+  ci = commit -v
+  co = checkout
+  br = branch
+  d = diff
+  l = log
