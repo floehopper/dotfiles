@@ -20,14 +20,18 @@ Bundle 'git://github.com/altercation/vim-colors-solarized.git'
 Bundle 'git://github.com/tpope/vim-cucumber.git'
 Bundle 'git://github.com/tpope/vim-vividchalk.git'
 
+" enable file type detection for syntax highlighting,
+" vim plugins & indent rules
 filetype plugin indent on
 
+" start syntax highlighting
 syntax on
 set background=dark
 colorscheme solarized 
 
 set statusline=%{fugitive#statusline()}
 
+" While typing a search command, show where the pattern, as it was typed so far, matches.
 set incsearch
 
 map <C-t> <leader>t
