@@ -36,3 +36,8 @@ set incsearch
 
 map <C-t> <leader>t
 map <C-f> :Ack 
+
+" allow backspacing over autoindent
+" allow backspacing over line breaks (join lines)
+" allow backspacing over the start of insert
+set backspace=indent,eol,start
