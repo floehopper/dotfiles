@@ -3,6 +3,7 @@
   email = james@floehopper.org
 [core]
   excludesfile = ~/.gitignore
+  editor=vim
 [color]
   ui = auto
 [alias]
