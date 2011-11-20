@@ -1,0 +1,5 @@
+if [[ -a Gemfile ]]; then
+  bundle exec $*
+else
+  command $*
+fi
