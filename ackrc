@@ -1,1 +1,2 @@
 --type-add=css=.less,.sass,.scss
+--type-set=puppet=.pp
