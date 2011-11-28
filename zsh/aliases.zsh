@@ -6,7 +6,6 @@ alias go="gem open"
 
 # depends on the bundler gem
 alias bi="bundle install"
-alias be="bundle exec"
 alias bo="bundle open"
 
 # depends on git

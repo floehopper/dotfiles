@@ -1,4 +1,5 @@
 if [[ -a Gemfile ]]; then
+  # depends on the bundler gem
   bundle exec $*
 else
   command $*
