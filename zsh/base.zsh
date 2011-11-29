@@ -3,6 +3,7 @@
 fpath=(~/.zsh/functions $fpath)
 
 source ~/.zsh/prompt.zsh
+source ~/.zsh/history.zsh
 source ~/.zsh/aliases.zsh
 
 # the -U turns off the use of any aliases defined when the function is actually loaded
