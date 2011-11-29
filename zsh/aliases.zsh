@@ -18,6 +18,7 @@ alias d="git diff"
 alias sc="script/rails c"
 alias ss="script/rails s"
 alias sg="script/rails g"
+alias db="script/rails db -p"
 
 # depends on the freerange-cli gem
 alias fr="freerange"
