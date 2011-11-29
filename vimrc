@@ -20,6 +20,7 @@ Bundle 'git://github.com/altercation/vim-colors-solarized.git'
 Bundle 'git://github.com/tpope/vim-cucumber.git'
 Bundle 'git://github.com/tpope/vim-vividchalk.git'
 Bundle 'git://github.com/bronson/vim-trailing-whitespace.git'
+Bundle 'git://github.com/tpope/vim-unimpaired.git'
 
 " enable file type detection for syntax highlighting,
 " vim plugins & indent rules
