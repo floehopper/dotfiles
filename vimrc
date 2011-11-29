@@ -42,3 +42,10 @@ map <C-f> :Ack
 " allow backspacing over line breaks (join lines)
 " allow backspacing over the start of insert
 set backspace=indent,eol,start
+
+" insert space characters whenever the tab key is pressed
+set expandtab
+" number of space characters that will be inserted when the tab key is pressed
+set tabstop=2
+" number of space characters inserted for indentation
+set shiftwidth=2
