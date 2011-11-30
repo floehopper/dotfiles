@@ -21,6 +21,7 @@ Bundle 'git://github.com/tpope/vim-cucumber.git'
 Bundle 'git://github.com/tpope/vim-vividchalk.git'
 Bundle 'git://github.com/bronson/vim-trailing-whitespace.git'
 Bundle 'git://github.com/tpope/vim-unimpaired.git'
+Bundle 'git://github.com/ChrisKempson/Vim-Tomorrow-Theme.git'
 
 " enable file type detection for syntax highlighting,
 " vim plugins & indent rules
@@ -28,9 +29,7 @@ filetype plugin indent on
 
 " start syntax highlighting
 syntax on
-set background=dark
-colorscheme solarized 
-
+colorscheme Tomorrow-Night
 set statusline=%{fugitive#statusline()}
 
 " While typing a search command, show where the pattern, as it was typed so far, matches.
