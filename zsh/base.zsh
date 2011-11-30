@@ -1,3 +1,6 @@
+# use emacs mode (as opposed to vi mode) for the zsh line editor
+bindkey -e
+
 # add my functions to the front of the function load path
 # so my functions take precedence over any others
 fpath=(~/.zsh/functions $fpath)
