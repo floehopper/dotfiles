@@ -1,2 +1,9 @@
+--ignore-dir=log
+--ignore-dir=tmp
 --type-add=css=.less,.sass,.scss
+--type-add=haml=.haml
 --type-set=puppet=.pp
+--type-add=ruby=.rake,.ru,.thor,Gemfile
+--type-add=cucumber=.feature
+--type-add=snip=.snip
+--nobin
