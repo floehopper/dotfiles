@@ -5,8 +5,10 @@ alias gi="gem install"
 alias go="gem open"
 
 # depends on the bundler gem
+# bundle exec is provided as a *function* `be`
 alias bi="bundle install"
 alias bo="bundle open"
+alias bc="bundle console"
 
 # depends on git
 alias s="git st"
