@@ -14,6 +14,11 @@ export BUNDLER_EDITOR
 GIT_EDITOR=$EDITOR
 export GIT_EDITOR
 
+# Prevent less from escaping xterm color control
+# characters that appear in Rails log file
+LESS="-R"
+export LESS
+
 CUCUMBER_FORMAT=progress
 export CUCUMBER_FORMAT
 
