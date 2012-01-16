@@ -9,6 +9,7 @@ alias go="gem open"
 alias bi="bundle install"
 alias bo="bundle open"
 alias bc="bundle console"
+alias bu="bundle update"
 
 # depends on git
 alias s="git st"
@@ -26,10 +27,12 @@ alias db="script/rails db -p"
 alias fr="freerange"
 
 # the following rely on the `be` function
+alias ruby='be ruby'
 alias rake='be rake'
 alias cap='be cap'
 alias rspec='be rspec'
 alias rackup='be rackup'
 alias rails='be rails'
 alias cucumber='be cucumber'
+alias webby='be webby'
 
