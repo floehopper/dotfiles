@@ -6,7 +6,7 @@ alias go="gem open"
 
 # depends on the bundler gem
 # bundle exec is provided as a *function* `be`
-alias bi="bundle install"
+alias bi="bundle install --path .bundle/gems --binstubs .bundle/bin"
 alias bo="bundle open"
 alias bc="bundle console"
 alias bu="bundle update"
@@ -26,13 +26,5 @@ alias db="script/rails db -p"
 # depends on the freerange-cli gem
 alias fr="freerange"
 
-# the following rely on the `be` function
+# the following relies on the `be` *function*
 alias ruby='be ruby'
-alias rake='be rake'
-alias cap='be cap'
-alias rspec='be rspec'
-alias rackup='be rackup'
-alias rails='be rails'
-alias cucumber='be cucumber'
-alias webby='be webby'
-

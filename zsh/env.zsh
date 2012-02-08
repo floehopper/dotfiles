@@ -1,5 +1,5 @@
 RBENVDIR="$HOME/.rbenv"
-PATH="$HOME/bin:$RBENVDIR/bin:$PATH"
+PATH=".bundle/bin:$RBENVDIR/bin:$HOME/bin:$PATH"
 export PATH
 
 EDITOR="vim"
