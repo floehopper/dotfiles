@@ -20,7 +20,5 @@ export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 export RUBY_GC_MALLOC_LIMIT=1000000000
 export RUBY_HEAP_FREE_MIN=500000
 
-export RBENV_VERSION="1.9.3-p0-perf"
-
 # Boot rbenv if it exists
 if [ -s ~/.rbenv ] ; then eval "$(rbenv init -)" ; fi
