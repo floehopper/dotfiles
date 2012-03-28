@@ -28,3 +28,4 @@ alias fr="freerange"
 
 # the following relies on the `be` *function*
 alias ruby='be ruby'
+alias irb='be irb'
