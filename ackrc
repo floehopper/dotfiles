@@ -1,5 +1,6 @@
 --ignore-dir=log
 --ignore-dir=tmp
+--ignore-dir=.bundle
 --type-add=css=.less,.sass,.scss
 --type-set=haml=.haml
 --type-set=puppet=.pp
