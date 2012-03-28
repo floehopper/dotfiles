@@ -5,6 +5,7 @@
 home = File.expand_path('~')
 
 Dir['*'].each do |file|
+  puts file
   next if file =~ /install/
   target = File.join(home, ".#{file}")
   command = "ln -fs #{File.expand_path file} #{target}"
