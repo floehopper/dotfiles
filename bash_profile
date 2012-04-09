@@ -1,4 +1,4 @@
-export PATH="$HOME/bin:$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 eval "$(rbenv init -)"
 
 export EDITOR="mate -w"

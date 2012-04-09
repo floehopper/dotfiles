@@ -1,5 +1,4 @@
-RBENVDIR="$HOME/.rbenv"
-export PATH=".bundle/bin:$RBENVDIR/bin:$HOME/bin:$PATH"
+export PATH=".bundle/bin:$HOME/bin:$PATH"
 
 export EDITOR="vim"
 export GEM_EDITOR=$EDITOR
@@ -20,5 +19,4 @@ export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 export RUBY_GC_MALLOC_LIMIT=1000000000
 export RUBY_HEAP_FREE_MIN=500000
 
-# Boot rbenv if it exists
-if [ -s ~/.rbenv ] ; then eval "$(rbenv init -)" ; fi
+eval "$(rbenv init -)"
