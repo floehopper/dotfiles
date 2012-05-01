@@ -1,5 +1,3 @@
-export PATH=".bundle/bin:$HOME/bin:$PATH"
-
 export EDITOR="vim"
 export GEM_EDITOR=$EDITOR
 export BUNDLER_EDITOR=$EDITOR
@@ -20,3 +18,5 @@ export RUBY_GC_MALLOC_LIMIT=1000000000
 export RUBY_HEAP_FREE_MIN=500000
 
 eval "$(rbenv init -)"
+
+export PATH=".bundle/bin:$HOME/bin:$PATH"
