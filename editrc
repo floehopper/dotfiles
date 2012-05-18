@@ -1,2 +1,5 @@
 # use vi-mode for e.g. irb
 bind -v
+
+# make tab completion work with vi-mode
+bind \\t rl_complete
