@@ -8,3 +8,4 @@
 --type-set=cucumber=.feature
 --type-set=snip=.snip
 --nobin
+--color-match=yellow
