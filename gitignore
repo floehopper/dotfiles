@@ -1,7 +1,23 @@
+# for vim
 *.swp
+
 TODO
+
 .DS_Store
+
+# for bundler
 .bundle
+
+# for yard
 .yardoc
+
+# for rbenv
 .rbenv-version
+.ruby-version
+
+# for pow
 .powrc
+
+# for zeus
+custom_plan.rb
+zeus.json
