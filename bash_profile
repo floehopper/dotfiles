@@ -1,6 +1,8 @@
 export PATH="$HOME/bin:$PATH"
 eval "$(rbenv init -)"
 
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+
 export EDITOR="vim"
 export GEM_EDITOR=$EDITOR
 export BUNDLER_EDITOR=$EDITOR
