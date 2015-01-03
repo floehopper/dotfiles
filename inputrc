@@ -1,6 +1,3 @@
-# use vi-mode for e.g. mysql
-# set editing-mode vi
-
 # command history completion
 "\e[A": history-search-backward
 "\e[B": history-search-forward
