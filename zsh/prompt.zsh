@@ -43,15 +43,4 @@ host_prompt_color() {
   esac
 }
 
-# depends on freerange-cli gem
-
-git_pair_info() {
-  pair=$(git config pair.initials) || return
-  case ${pair} in
-    [a-z]*)
-      echo "‣${pair}"
-    ;;;
-  esac
-}
-
 export PROMPT=$'$(host_prompt_color)%n@%M:%~$(git_prompt_info)$ %{$fg[white]%}'

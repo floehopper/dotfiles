@@ -24,9 +24,6 @@ alias ss="script/rails s"
 alias sg="script/rails g"
 alias db="script/rails db -p"
 
-# depends on the freerange-cli gem
-alias fr="freerange"
-
 # the following relies on the `be` *function*
 alias ruby='be ruby'
 alias irb='be irb'
