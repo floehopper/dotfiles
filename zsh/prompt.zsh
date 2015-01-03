@@ -43,4 +43,4 @@ host_prompt_color() {
   esac
 }
 
-export PROMPT=$'$(host_prompt_color)%n@%M:%~$(git_prompt_info)$ %{$fg[white]%}'
+export PROMPT=$'$(host_prompt_color)%n@%M:%~$ %{$fg[white]%}'
