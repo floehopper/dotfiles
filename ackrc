@@ -7,5 +7,5 @@
 --type-add=ruby=.rake,.ru,.thor,Gemfile
 --type-set=cucumber=.feature
 --type-set=snip=.snip
---nobin
+--type-set=plaintext=.md,.mdown,.markdown,.mkdn,.textile,.rst,.txt
 --color-match=yellow
