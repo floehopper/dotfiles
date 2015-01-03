@@ -1,4 +1,4 @@
-alias e="mate2 ."
+alias e="mate ."
 alias ls="ls -l"
 
 # depends on rubygems
