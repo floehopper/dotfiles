@@ -1,6 +1,7 @@
 export EDITOR="mate -w"
 
-# don't escape colours in Rails log file
+# Prevent less from escaping xterm color control
+# characters that appear in Rails log file
 export LESS="-R"
 
 eval "$(rbenv init -)"
