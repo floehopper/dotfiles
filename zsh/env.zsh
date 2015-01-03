@@ -1,4 +1,4 @@
-export EDITOR="mate2 -w"
+export EDITOR="mate -w"
 export GEM_EDITOR=$EDITOR
 export BUNDLER_EDITOR=$EDITOR
 export GIT_EDITOR=$EDITOR
