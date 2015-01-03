@@ -35,5 +35,3 @@ export MONO_GAC_PREFIX="/usr/local"
 eval "$(rbenv init -)"
 
 export PATH=".bundle/bin:~/node_modules/.bin/:$HOME/bin:/usr/local/heroku/bin:$PATH"
-
-[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
