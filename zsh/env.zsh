@@ -9,4 +9,4 @@ export LESS="-R"
 
 eval "$(rbenv init -)"
 
-export PATH=".bundle/bin:~/node_modules/.bin/:$HOME/bin:/usr/local/heroku/bin:$PATH"
+export PATH="./.bundle/bin:$PATH"
