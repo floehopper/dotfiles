@@ -54,4 +54,5 @@ git_pair_info() {
   esac
 }
 
-export PROMPT=$'$(host_prompt_color)%n@%M:%~$(git_prompt_info)[$VIMODE]$ %{$fg[white]%}'
+# export PROMPT=$'$(host_prompt_color)%n@%M:%~$(git_prompt_info)[$VIMODE]$ %{$fg[white]%}'
+export PROMPT=$'$(host_prompt_color)%n@%M:%~$(git_prompt_info)$ %{$fg[white]%}'

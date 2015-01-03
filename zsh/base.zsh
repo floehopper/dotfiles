@@ -6,6 +6,7 @@ source ~/.zsh/zle.zsh
 source ~/.zsh/prompt.zsh
 source ~/.zsh/history.zsh
 source ~/.zsh/aliases.zsh
+source ~/.zsh/completion.zsh
 
 # the -U turns off the use of any aliases defined when the function is actually loaded
 # this is so that the function doesn't have to worry about whether a command it wants
