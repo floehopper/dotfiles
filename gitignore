@@ -17,7 +17,11 @@ TODO
 
 # for pow
 .powrc
+.powenv
 
 # for zeus
 custom_plan.rb
 zeus.json
+
+# for rspec (e.g. .rspec-tm)
+.rspec*
