@@ -1,8 +1,8 @@
 [user]
-  name = James Mead
-  email = james@floehopper.org
+	name = James Mead
+	email = james@floehopper.org
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/jamesmead/.gitignore
 [color]
   ui = auto
 [alias]
@@ -15,3 +15,40 @@
   lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 [branch]
   autosetuprebase = always
+[push]
+	default = simple
+[git-pair]
+	pattern = pairing+%name+%name@futurelearn.com
+	authors = chrisroos <chris@seagul.co.uk>
+	authors = floehopper <james@floehopper.org>
+	authors = sebjacobs <me@sebjacobs.com>
+	authors = tomafro <tom@popdog.net>
+	authors = tomtt <github@tomtenthij.nl>
+	authors = lazyatom <james@lazyatom.com>
+	authors = rchatley <robert@chatley.com>
+	authors = heartcode <heartcode@robertpataki.com>
+	authors = nicky <nicky.thompson@gmail.com>
+	authors = mseckington <mseckington@gmail.com>
+	authors = mocoso <joel.chippindale@futurelearn.com>
+	authors = zetter <zetter@gmail.com>
+	authors = chrislo <chris.lowis@gmail.com>
+	authors = eightbitraptor <matt@eightbitraptor.com>
+	authors = barrymcgee <barry.mcgee@integralcode.co.uk>
+	authors = jcoglan <jcoglan@gmail.com>
+	authors = juweez <jusna.begum@futurelearn.com>
+	authors = markjs <mark.smith@futurelearn.com>
+	authors = jamesmockett <james.mockett@futurelearn.com>
+	authors = vajdagabor <g.vajda@me.com>
+	authors = rplopes <ricardo.lopes@futurelearn.com>
+	authors = alssndro <alex.mura@futurelearn.com>
+	authors = wannabefro <sam.mctaggart@gmail.com>
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree 2.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[rebase]
+	autosquash = true
+[heroku]
+	account = freerange
