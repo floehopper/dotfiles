@@ -1,10 +1,6 @@
 alias e="mate ."
 alias ls="ls -l"
 
-# depends on rubygems
-# alias gi="gem install"
-# alias go="gem open" # conflicts with go language
-
 # depends on the bundler gem
 # bundle exec is provided as a *function* `be`
 alias bi="bundle install --path .bundle/gems --binstubs .bundle/bin"
