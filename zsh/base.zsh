@@ -2,7 +2,6 @@
 # so my functions take precedence over any others
 fpath=(~/.zsh/functions $fpath)
 
-source ~/.zsh/zle.zsh
 source ~/.zsh/prompt.zsh
 source ~/.zsh/history.zsh
 source ~/.zsh/aliases.zsh
