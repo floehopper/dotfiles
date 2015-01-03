@@ -7,8 +7,6 @@ export GIT_EDITOR=$EDITOR
 # characters that appear in Rails log file
 export LESS="-R"
 
-export IPLAYER_OUTDIR="Downloads"
-
 # For Mono/FSharp
 export MONO_GAC_PREFIX="/usr/local"
 
