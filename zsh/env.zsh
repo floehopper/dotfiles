@@ -3,9 +3,6 @@ export GEM_EDITOR=$EDITOR
 export BUNDLER_EDITOR=$EDITOR
 export GIT_EDITOR=$EDITOR
 
-export VMAIL_BROWSER='elinks'
-export VMAIL_HTML_PART_READER='elinks -dump'
-
 # Prevent less from escaping xterm color control
 # characters that appear in Rails log file
 export LESS="-R"
