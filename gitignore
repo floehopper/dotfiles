@@ -8,6 +8,9 @@ TODO
 # for bundler
 .bundle
 
+# for npm
+node_modules
+
 # for yard
 .yardoc
 
