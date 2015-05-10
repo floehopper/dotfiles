@@ -6,4 +6,4 @@ export LESS="-R"
 
 eval "$(rbenv init -)"
 
-export PATH="./.bundle/bin:./node_modules/.bin:$PATH"
+export PATH="./.bundle/bin:./node_modules/.bin:/Users/jamesmead/bin:$PATH"
