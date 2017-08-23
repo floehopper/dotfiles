@@ -1,5 +1,4 @@
 export EDITOR="atom -f"
-export GIT_EDITOR="atom -w"
 
 # Prevent less from escaping xterm color control
 # characters that appear in Rails log file
