@@ -10,7 +10,3 @@ eval "$(rbenv init -)"
 export PATH="./.bundle/bin:./node_modules/.bin:/Users/jamesmead/bin:$PATH"
 
 if [ -f ~/.bashrc ]; then . ~/.bashrc; fi
-
-
-# added by Anaconda3 4.1.1 installer
-# export PATH="/Users/jamesmead/Code/continuum/anaconda3/bin:$PATH"
