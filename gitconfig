@@ -15,32 +15,29 @@
   rb = rebase
   lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 [branch]
+  # always rebase vs merge when pulling
   autosetuprebase = always
 [push]
+  # push the current branch back to the tracked/upstream branch
+  # but refuse to push if the upstream branch’s name is different from the local one
   default = simple
-  followTags = true
 [rebase]
+  # allow fixup & squash commits
   autosquash = true
 [pull]
+  # rebase branches on top of the fetched branch
+  # locally committed merge commits will not be flattened by running `git pull`
   rebase = preserve
 [commit]
+  # display diff in commit editor
   verbose = true
-[filter "lfs"]
-  clean = git-lfs clean %f
-  smudge = git-lfs smudge %f
-  required = true
 [url "ssh://git@heroku.com/"]
+  # always use SSH for Heroku git repos
+  # see https://blog.heroku.com/http_git_now_generally_available
   insteadOf = https://git.heroku.com/
 [merge]
+  # in merge conflicts show original source as well as changes by both sides
   conflictstyle = diff3
 [status]
+  # when using `git status` & `git commit` show individual files in untracked directories
   showUntrackedFiles = all
-
-[help]
-	autocorrect = 5
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true

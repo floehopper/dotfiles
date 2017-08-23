@@ -1,8 +1,10 @@
 # for vim
 *.swp
 
+# for personal to-do lists
 TODO
 
+# for OSX
 .DS_Store
 
 # for bundler
@@ -15,8 +17,7 @@ node_modules
 # for yard
 .yardoc
 
-# for rbenv
-#.rbenv-version
+# for ruby version managers
 .ruby-version
 
 # for pow
@@ -30,6 +31,8 @@ zeus.json
 # for rspec (e.g. .rspec-tm)
 .rspec*
 
+# for simplecov
 .simplecov
 
+# for rubocop
 .rubocop
