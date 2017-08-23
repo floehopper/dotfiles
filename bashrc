@@ -5,3 +5,11 @@ export EDITOR="atom --foreground"
 # Prevent less from escaping xterm color control
 # characters that appear in Rails log file
 export LESS="-R"
+
+alias ls="ls -l"
+
+# depends on git
+alias s="git st"
+alias c="git ci"
+alias a="git add"
+alias d="git diff"
