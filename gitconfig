@@ -3,13 +3,16 @@
   email = james@floehopper.org
 [core]
   excludesfile = /Users/jamesmead/.gitignore
+  attributesFile = /Users/jamesmead/.gitattributes
 [color]
   ui = auto
 [alias]
   st = status -sb
   ci = commit -v
   co = checkout
+  cp = cherry-pick
   br = branch
+  rb = rebase
   d = diff
   l = log
   lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
@@ -17,5 +20,29 @@
   autosetuprebase = always
 [push]
   default = simple
+  followTags = true
 [rebase]
   autosquash = true
+[pull]
+  rebase = preserve
+[commit]
+  verbose = true
+[filter "lfs"]
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
+[url "ssh://git@heroku.com/"]
+  insteadOf = https://git.heroku.com/
+[merge]
+  conflictstyle = diff3
+[status]
+  showUntrackedFiles = all
+
+[help]
+	autocorrect = 5
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
