@@ -2,6 +2,7 @@
   name = James Mead
   email = james@floehopper.org
 [core]
+  editor = vim
   excludesfile = /Users/jamesmead/.gitignore
   attributesFile = /Users/jamesmead/.gitattributes
 [color]
