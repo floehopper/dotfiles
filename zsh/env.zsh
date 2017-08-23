@@ -6,8 +6,6 @@ export EDITOR="atom --foreground"
 # characters that appear in Rails log file
 export LESS="-R"
 
-eval "$(rbenv init -)"
-
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/System/Library/CoreServices:$PATH"
 export PATH="/Users/jamesmead/bin:$PATH"
