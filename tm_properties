@@ -1,2 +1,0 @@
-PATH=./.bundle/bin:$HOME/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
-TM_RUBY=$HOME/.rbenv/shims/ruby
