@@ -13,3 +13,16 @@ alias s="git st"
 alias c="git ci"
 alias a="git add"
 alias d="git diff"
+
+# As recommended by `brew install bash-completion`
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
+# Fancy git prompt
+source /usr/local/etc/bash_completion.d/git-prompt.sh
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWSTASHSTATE=1
+GIT_PS1_SHOWUNTRACKEDFILES=1
+GIT_PS1_SHOWUPSTREAM="auto,verbose"
+GIT_PS1_SHOWCOLORHINTS=1
+PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
+
