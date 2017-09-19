@@ -26,3 +26,12 @@ GIT_PS1_SHOWUPSTREAM="auto,verbose"
 GIT_PS1_SHOWCOLORHINTS=1
 PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
 
+# Append vs overwrite bash history
+shopt -s histappend;
+
+# Ignore duplicates in bash history
+export HISTCONTROL=ignoredups
+
+# Big bash history
+export HISTSIZE=10000
+export HISTFILESIZE=10000
