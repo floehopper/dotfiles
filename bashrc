@@ -37,3 +37,5 @@ export HISTSIZE=10000
 export HISTFILESIZE=10000
 
 eval "$(rbenv init -)"
+
+export PATH=".bundle/bin:$PATH"
