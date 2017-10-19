@@ -40,3 +40,8 @@ eval "$(rbenv init -)"
 
 export PATH=".bundle/bin:$PATH"
 export PATH="~/bin:$PATH"
+
+# https://github.com/Yleisradio/homebrew-terraforms
+if [[ -f /usr/local/share/chtf/chtf.sh ]]; then
+  source "/usr/local/share/chtf/chtf.sh"
+fi
