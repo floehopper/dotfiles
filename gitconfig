@@ -25,6 +25,8 @@
 [rebase]
   # allow fixup & squash commits
   autosquash = true
+  # this means that you can run rebase on a dirty worktree
+  autostash = true
 [pull]
   # rebase branches on top of the fetched branch
   # locally committed merge commits will not be flattened by running `git pull`
