@@ -44,3 +44,5 @@
 [status]
   # when using `git status` & `git commit` show individual files in untracked directories
   showUntrackedFiles = all
+[pager]
+  branch = false
