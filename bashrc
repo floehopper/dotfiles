@@ -40,6 +40,7 @@ eval "$(rbenv init -)"
 
 export PATH=".bundle/bin:$PATH"
 export PATH="node_modules/.bin:$PATH"
+export PATH="~/go/bin:$PATH"
 export PATH="~/bin:$PATH"
 
 # https://github.com/Yleisradio/homebrew-terraforms
