@@ -57,3 +57,6 @@ export NVM_DIR="$HOME/.nvm"
 # Added to augment git with GitHub-related commands
 # https://github.com/github/hub#aliasing
 eval "$(hub alias -s)"
+
+# Automatically added by running `$(brew --prefix)/opt/fzf/install`
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

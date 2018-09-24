@@ -5,3 +5,6 @@ source ~/.zsh/base.zsh
 
 # added for changing terraform version
 source /usr/local/opt/chtf/share/chtf/chtf.sh
+
+# Automatically added by running `$(brew --prefix)/opt/fzf/install`
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
