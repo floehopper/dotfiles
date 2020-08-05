@@ -65,3 +65,10 @@ export NVM_DIR="$HOME/.nvm"
 
 # Automatically added by running `$(brew --prefix)/opt/fzf/install`
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# Python version management
+# https://github.com/pyenv/pyenv
+# https://github.com/pyenv/pyenv-virtualenv
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
