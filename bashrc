@@ -30,15 +30,20 @@ GIT_PS1_SHOWUPSTREAM="auto,verbose"
 GIT_PS1_SHOWCOLORHINTS=1
 PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
 
+# Save & reload bash history after every command to make
+# them available in all shells as soon as possible
+# See: https://ss64.com/bash/history.html
+PROMPT_COMMAND="history -a; history -n; $PROMPT_COMMAND"
+
 # Append vs overwrite bash history
 shopt -s histappend;
 
-# Ignore duplicates in bash history
-export HISTCONTROL=ignoredups
+# Don't put duplicate lines or lines starting with space in the history
+export HISTCONTROL=ignoreboth
 
 # Big bash history
-export HISTSIZE=10000
-export HISTFILESIZE=10000
+export HISTSIZE=100000
+export HISTFILESIZE=10000000
 
 eval "$(rbenv init -)"
 
