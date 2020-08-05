@@ -62,9 +62,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# Added to augment git with GitHub-related commands
-# https://github.com/github/hub#aliasing
-eval "$(hub alias -s)"
-
 # Automatically added by running `$(brew --prefix)/opt/fzf/install`
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
