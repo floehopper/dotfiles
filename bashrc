@@ -47,9 +47,13 @@ export HISTFILESIZE=10000000
 
 eval "$(rbenv init -)"
 
+export GOPATH="${HOME}/.go"
+export GOROOT="$(brew --prefix golang)/libexec"
+
 export PATH=".bundle/bin:$PATH"
 export PATH="node_modules/.bin:$PATH"
-export PATH="~/go/bin:$PATH"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="~/bin:$PATH"
 
 # https://github.com/Yleisradio/homebrew-terraforms
