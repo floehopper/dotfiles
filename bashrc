@@ -56,11 +56,6 @@ export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="~/bin:$PATH"
 
-# https://github.com/Yleisradio/homebrew-terraforms
-if [[ -f /usr/local/share/chtf/chtf.sh ]]; then
-  source "/usr/local/share/chtf/chtf.sh"
-fi
-
 # Automatically added by Node Version Manager
 # https://github.com/creationix/nvm
 export NVM_DIR="$HOME/.nvm"
