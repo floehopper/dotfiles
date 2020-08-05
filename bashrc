@@ -72,3 +72,8 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# bundler performance
+CORES=`sysctl -n hw.ncpu 2>/dev/null || nproc` #mac & linux
+MAKEFLAGS="-j$CORES"; export MAKEFLAGS
+BUNDLE_JOBS="$CORES"; export BUNDLE_JOBS
