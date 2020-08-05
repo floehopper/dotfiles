@@ -1,6 +1,6 @@
 [user]
   name = James Mead
-  email = 3169+floehopper@users.noreply.github.com
+  email = james@floehopper.org
 [core]
   editor = vim
   excludesfile = /Users/jamesmead/.gitignore
