@@ -46,5 +46,3 @@
   showUntrackedFiles = all
 [pager]
   branch = false
-[includeIf "gitdir:~/Code/trainline/"]
-  path = ~/.gitconfig.trainline.inc
