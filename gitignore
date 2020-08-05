@@ -37,3 +37,9 @@ zeus.json
 
 # for rubocop
 .rubocop
+
+# for vagrant
+.vagrant
+
+# for foreman
+.foreman
