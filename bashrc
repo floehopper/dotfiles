@@ -1,3 +1,7 @@
+# suppress deprecation warning for using bash shell vs zsh on MacOS Catalina
+# see: https://support.apple.com/en-us/HT208050
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # make atom the default editor
 # keep the main process in the foreground
 export EDITOR="atom --foreground"
