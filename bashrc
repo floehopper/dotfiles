@@ -50,6 +50,7 @@ eval "$(rbenv init -)"
 export GOPATH="${HOME}/.go"
 export GOROOT="$(brew --prefix golang)/libexec"
 
+export PATH="/usr/local/sbin:$PATH" # recommended by `brew doctor`
 export PATH=".bundle/bin:$PATH"
 export PATH="node_modules/.bin:$PATH"
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
