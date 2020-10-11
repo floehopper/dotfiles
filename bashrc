@@ -18,6 +18,9 @@ alias c="git ci"
 alias a="git add"
 alias d="git diff"
 
+# depends on docker
+alias dc="docker-compose"
+
 # As recommended by `brew install bash-completion`
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
