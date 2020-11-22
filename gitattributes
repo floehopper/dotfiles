@@ -8,4 +8,5 @@
 *.php diff=php
 *.py diff=python
 *.rb diff=ruby
+*.rake diff=ruby
 *.tex diff=tex
