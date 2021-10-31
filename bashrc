@@ -48,8 +48,6 @@ export HISTCONTROL=ignoreboth
 export HISTSIZE=100000
 export HISTFILESIZE=10000000
 
-eval "$(rbenv init -)"
-
 export GOPATH="${HOME}/.go"
 export GOROOT="$(brew --prefix golang)/libexec"
 
@@ -63,21 +61,11 @@ export PATH="~/bin:$PATH"
 # Used by Ferrum/Cuprite
 export BROWSER_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
-# Automatically added by Node Version Manager
-# https://github.com/creationix/nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # Automatically added by running `$(brew --prefix)/opt/fzf/install`
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-# Python version management
-# https://github.com/pyenv/pyenv
-# https://github.com/pyenv/pyenv-virtualenv
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# asdf version management
+. $(brew --prefix asdf)/libexec/asdf.sh
 
 # bundler performance
 CORES=`sysctl -n hw.ncpu 2>/dev/null || nproc` #mac & linux
