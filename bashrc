@@ -60,6 +60,9 @@ export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="~/bin:$PATH"
 
+# Used by Ferrum/Cuprite
+export BROWSER_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+
 # Automatically added by Node Version Manager
 # https://github.com/creationix/nvm
 export NVM_DIR="$HOME/.nvm"
