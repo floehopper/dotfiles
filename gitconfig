@@ -36,6 +36,7 @@
 [commit]
   # display diff in commit editor
   verbose = true
+	gpgsign = true
 [url "ssh://git@heroku.com/"]
   # always use SSH for Heroku git repos
   # see https://blog.heroku.com/http_git_now_generally_available
