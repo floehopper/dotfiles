@@ -51,3 +51,5 @@
   branch = false
 [includeIf "gitdir:~/Code/outlandish/"]
   path = ~/.gitconfig.outlandish.inc
+[help]
+  autoCorrect=0
