@@ -7,15 +7,11 @@ brew "fd"
 brew "ffmpeg"
 brew "glow"
 brew "heroku"
-brew "isync"
 brew "java"
 brew "jq"
 brew "mas"
-brew "msmtp"
-brew "neomutt"
 brew "netlify-cli"
 brew "oauth2c"
-brew "pass"
 brew "portaudio"
 brew "trash"
 brew "tree"
@@ -61,4 +57,3 @@ cask "zoom"
 
 # mas "Things", id: 904280696
 # mas "Seashore", id: 1448648921
-
