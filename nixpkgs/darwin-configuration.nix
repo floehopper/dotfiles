@@ -44,6 +44,7 @@ in
       envExtra = ''
       '';
       initExtra = ''
+        export PATH=$PATH:${userHome}/govuk/govuk-docker/exe
         . /opt/homebrew/opt/asdf/libexec/asdf.sh
         ulimit -S -n 2048
       '';
