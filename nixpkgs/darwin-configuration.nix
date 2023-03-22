@@ -35,6 +35,11 @@ in
         email = "james.mead+dxw@gofreerange.com"
     '';
 
+    home.file."${userHome}/.config/git/gds.inc".text = ''
+      [user]
+        email = "james.mead@digital.cabinet-office.gov.uk"
+    '';
+
     programs.zsh = {
       enable = true;
       oh-my-zsh = {
@@ -190,6 +195,10 @@ in
         {
           condition = "gitdir:${userHome}/Code/dxw/";
           path = "${userHome}/.config/git/dxw.inc";
+        }
+        {
+          condition = "gitdir:${userHome}/govuk/";
+          path = "${userHome}/.config/git/gds.inc";
         }
       ];
     };
