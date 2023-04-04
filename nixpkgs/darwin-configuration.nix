@@ -49,6 +49,7 @@ in
       envExtra = ''
       '';
       initExtra = ''
+        /usr/bin/ssh-add --apple-use-keychain ${userHome}/.ssh/id_ed25519
         export PATH=$PATH:${userHome}/govuk/govuk-docker/exe
         . /opt/homebrew/opt/asdf/libexec/asdf.sh
         ulimit -S -n 2048
@@ -60,7 +61,7 @@ in
       extraConfig = ''
         UseKeychain yes
         AddKeysToAgent yes
-        IdentityFile ${userHome}/.ssh/id_rsa
+        IdentityFile ${userHome}/.ssh/id_ed25519
       '';
     };
 
