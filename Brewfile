@@ -3,6 +3,7 @@ tap "homebrew/autoupdate"
 tap "alphagov/gds"
 
 brew "age"
+brew "argo"
 brew "awscli"
 brew "fd"
 brew "ffmpeg"
