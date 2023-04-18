@@ -62,6 +62,8 @@ in
         UseKeychain yes
         AddKeysToAgent yes
         IdentityFile ${userHome}/.ssh/id_ed25519
+        HostkeyAlgorithms +ssh-rsa
+        PubkeyAcceptedAlgorithms +ssh-rsa
       '';
     };
 
