@@ -4,6 +4,7 @@ tap "alphagov/gds"
 
 brew "age"
 brew "argo"
+brew "asdf"
 brew "awscli"
 brew "fd"
 brew "ffmpeg"
