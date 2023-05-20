@@ -12,6 +12,8 @@ in
   };
 
   home-manager.users.jamesmead = { config, pkgs, ... }: {
+    home.stateVersion = "22.11";
+
     home.homeDirectory = userHome;
 
     home.sessionVariables = {
