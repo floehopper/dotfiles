@@ -11,7 +11,7 @@ in
     home = userHome;
   };
 
-  home-manager.users.jamesmead = { pkgs, ... }: {
+  home-manager.users.jamesmead = { config, pkgs, ... }: {
     home.homeDirectory = userHome;
 
     home.sessionVariables = {
@@ -40,6 +40,10 @@ in
         email = "james.mead@digital.cabinet-office.gov.uk"
     '';
 
+    # Assumes 1Password is installed with its SSH Agent
+    # See https://developer.1password.com/docs/ssh/agent
+    home.file."${userHome}/.1password/agent.sock".source = config.lib.file.mkOutOfStoreSymlink "${userHome}/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock";
+
     programs.zsh = {
       enable = true;
       oh-my-zsh = {
@@ -61,6 +65,7 @@ in
       extraConfig = ''
         UseKeychain yes
         AddKeysToAgent yes
+        IdentityAgent ${userHome}/.1password/agent.sock
         IdentityFile ${userHome}/.ssh/id_ed25519
         HostkeyAlgorithms +ssh-rsa
         PubkeyAcceptedAlgorithms +ssh-rsa
