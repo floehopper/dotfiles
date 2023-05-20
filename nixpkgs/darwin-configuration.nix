@@ -199,6 +199,21 @@ in
         help = {
           autoCorrect = 0;
         };
+
+        # 1Password-based config for signing git commits
+        # See https://developer.1password.com/docs/ssh/git-commit-signing
+        user = {
+          signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJXhBL4fySxImt3eVqEFaCuJTNu8V8+FqkOBvY3GQggj";
+        };
+
+        gpg = {
+          format = "ssh";
+          ssh.program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign";
+        };
+
+        commit = {
+          gpgsign = true;
+        };
       };
 
       includes = [
