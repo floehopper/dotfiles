@@ -171,9 +171,8 @@ in
         };
 
         pull = {
-          # rebase branches on top of the fetched branch
-          # locally committed merge commits will not be flattened by running `git pull`
-          rebase = "preserve";
+          # rebase using git rebase --rebase-merges so that the local merge commits are included in the rebase
+          rebase = "merges";
         };
 
         commit = {
