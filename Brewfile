@@ -2,6 +2,7 @@ tap "heroku/brew"
 tap "homebrew/autoupdate"
 tap "alphagov/gds"
 
+brew "actionlint"
 brew "age"
 brew "argo"
 brew "asdf"
