@@ -135,9 +135,6 @@ in
         # for brew bundle
         ".Brewfile"
         ".Brewfile.lock.json"
-
-        # for asdf
-        ".tool-versions"
       ];
 
       extraConfig = {
