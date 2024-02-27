@@ -214,6 +214,10 @@ in
         rerere = {
           enabled = true;
         };
+
+        diff = {
+          algorithm = "histogram";
+        };
       };
 
       includes = [
