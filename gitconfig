@@ -53,3 +53,5 @@
   path = ~/.gitconfig.outlandish.inc
 [help]
   autoCorrect=0
+[rerere]
+  enabled=true

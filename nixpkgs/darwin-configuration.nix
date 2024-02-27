@@ -210,6 +210,10 @@ in
         commit = {
           gpgsign = true;
         };
+
+        rerere = {
+          enabled = true;
+        };
       };
 
       includes = [
