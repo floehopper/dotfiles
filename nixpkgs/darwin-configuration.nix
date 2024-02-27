@@ -37,11 +37,6 @@ in
         email = "james.mead+dxw@gofreerange.com"
     '';
 
-    home.file."${userHome}/.config/git/gds.inc".text = ''
-      [user]
-        email = "james.mead@digital.cabinet-office.gov.uk"
-    '';
-
     # Assumes 1Password is installed with its SSH Agent
     # See https://developer.1password.com/docs/ssh/agent
     home.file."${userHome}/.1password/agent.sock".source = config.lib.file.mkOutOfStoreSymlink "${userHome}/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock";
@@ -55,8 +50,6 @@ in
       envExtra = ''
       '';
       initExtra = ''
-        /usr/bin/ssh-add --apple-use-keychain ${userHome}/.ssh/id_ed25519
-        export PATH=$PATH:${userHome}/govuk/govuk-docker/exe
         . /opt/homebrew/opt/asdf/libexec/asdf.sh
         ulimit -S -n 2048
       '';
@@ -224,10 +217,6 @@ in
         {
           condition = "gitdir:${userHome}/Code/dxw/";
           path = "${userHome}/.config/git/dxw.inc";
-        }
-        {
-          condition = "gitdir:${userHome}/govuk/";
-          path = "${userHome}/.config/git/gds.inc";
         }
       ];
     };
