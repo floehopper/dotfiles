@@ -32,11 +32,6 @@ in
       pkgs.wget
     ];
 
-    home.file."${userHome}/.config/git/dxw.inc".text = ''
-      [user]
-        email = "james.mead+dxw@gofreerange.com"
-    '';
-
     # Assumes 1Password is installed with its SSH Agent
     # See https://developer.1password.com/docs/ssh/agent
     home.file."${userHome}/.1password/agent.sock".source = config.lib.file.mkOutOfStoreSymlink "${userHome}/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock";
@@ -214,10 +209,6 @@ in
       };
 
       includes = [
-        {
-          condition = "gitdir:${userHome}/Code/dxw/";
-          path = "${userHome}/.config/git/dxw.inc";
-        }
       ];
     };
   };
