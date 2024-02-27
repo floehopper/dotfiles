@@ -73,6 +73,7 @@ cask "vienna"
 cask "visual-studio-code"
 cask "vlc"
 cask "whatsapp"
+cask "zed"
 cask "zoom"
 
 # mas "Things", id: 904280696
