@@ -179,7 +179,7 @@ in
 
         merge = {
           # in merge conflicts show original source as well as changes by both sides
-          conflictstyle = "diff3";
+          conflictstyle = "zdiff3";
         };
 
         status = {
