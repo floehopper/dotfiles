@@ -27,6 +27,7 @@ brew "ripgrep"
 brew "trash"
 brew "tree"
 brew "youtube-dl"
+brew "yt-dlp"
 brew "z80asm"
 
 cask "1password"
