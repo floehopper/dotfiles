@@ -37,6 +37,11 @@ in
         email = "james.mead+nestauk@gofreerange.com"
     '';
 
+    home.file."${userHome}/.config/git/rpf.inc".text = ''
+      [user]
+        email = "james.mead+rpf@gofreerange.com"
+    '';
+
     # Assumes 1Password is installed with its SSH Agent
     # See https://developer.1password.com/docs/ssh/agent
     home.file."${userHome}/.1password/agent.sock".source = config.lib.file.mkOutOfStoreSymlink "${userHome}/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock";
@@ -217,6 +222,10 @@ in
         {
           condition = "gitdir:${userHome}/Code/nestauk/";
           path = "${userHome}/.config/git/nestauk.inc";
+        }
+        {
+          condition = "gitdir:${userHome}/Code/rpf/";
+          path = "${userHome}/.config/git/rpf.inc";
         }
       ];
     };
