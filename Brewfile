@@ -3,7 +3,6 @@ tap "homebrew/autoupdate"
 
 brew "actionlint"
 brew "age"
-brew "argo"
 brew "asdf"
 brew "awscli"
 brew "difftastic"
