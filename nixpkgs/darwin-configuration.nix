@@ -163,6 +163,9 @@ in
 
           # this means that you can run rebase on a dirty worktree
           autostash = true;
+
+          # rebase dependent branches
+          updateRefs = true;
         };
 
         pull = {
