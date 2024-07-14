@@ -19,6 +19,7 @@ in
     home.sessionVariables = {
       EDITOR = "vim";
       LESS = "-R"; # Prevent less from escaping xterm color control chars that appear in Rails log file
+      HOMEBREW_NO_ENV_HINTS = "Yes";
     };
 
     home.shellAliases = {
