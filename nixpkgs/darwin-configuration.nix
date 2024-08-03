@@ -68,6 +68,8 @@ in
         AddKeysToAgent yes
         IdentityAgent ${userHome}/.1password/agent.sock
         IdentityFile ${userHome}/.ssh/id_ed25519
+        Host ssh.frankfurt.render.com ssh.oregon.render.com
+          UpdateHostKeys no
       '';
     };
 
