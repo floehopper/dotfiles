@@ -68,8 +68,6 @@ in
         AddKeysToAgent yes
         IdentityAgent ${userHome}/.1password/agent.sock
         IdentityFile ${userHome}/.ssh/id_ed25519
-        HostkeyAlgorithms +ssh-rsa
-        PubkeyAcceptedAlgorithms +ssh-rsa
       '';
     };
 
