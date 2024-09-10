@@ -20,6 +20,7 @@ in
       EDITOR = "vim";
       LESS = "-R"; # Prevent less from escaping xterm color control chars that appear in Rails log file
       HOMEBREW_NO_ENV_HINTS = "Yes";
+      ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY = "latest_available";
     };
 
     home.shellAliases = {
