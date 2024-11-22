@@ -16,6 +16,10 @@ in
 
     home.homeDirectory = userHome;
 
+    home.sessionPath = [
+      "/opt/homebrew/opt/postgresql@17/bin"
+    ];
+
     home.sessionVariables = {
       EDITOR = "vim";
       LESS = "-R"; # Prevent less from escaping xterm color control chars that appear in Rails log file
