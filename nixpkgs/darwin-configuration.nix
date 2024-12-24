@@ -18,6 +18,7 @@ in
 
     home.sessionPath = [
       "/opt/homebrew/opt/postgresql@17/bin"
+      "/opt/homebrew/opt/trash/bin"
     ];
 
     home.sessionVariables = {
