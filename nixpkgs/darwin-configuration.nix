@@ -201,7 +201,7 @@ in
         };
 
         help = {
-          autoCorrect = 0;
+          autoCorrect = "prompt";
         };
 
         # 1Password-based config for signing git commits
