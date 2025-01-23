@@ -29,7 +29,6 @@ brew "ripgrep"
 brew "trash"
 brew "tree"
 brew "unix2dos"
-brew "youtube-dl"
 brew "yt-dlp"
 brew "z80asm"
 
