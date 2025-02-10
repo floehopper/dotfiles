@@ -66,7 +66,7 @@ in
       envExtra = ''
       '';
       initExtra = ''
-        . /opt/homebrew/opt/asdf/libexec/asdf.sh
+        export PATH="${userHome}/.asdf/shims:$PATH"
         ulimit -S -n 2048
       '';
     };
