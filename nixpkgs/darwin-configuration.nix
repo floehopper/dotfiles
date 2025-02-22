@@ -144,6 +144,9 @@ in
         # for brew bundle
         ".Brewfile"
         ".Brewfile.lock.json"
+
+        # for zed editor
+        ".zed/"
       ];
 
       extraConfig = {
