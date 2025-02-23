@@ -96,6 +96,11 @@ in
       plugins = [
         pkgs.vimPlugins.fzf-vim
       ];
+      extraConfig = ''
+        filetype plugin indent on
+        syntax on
+        set ruler
+      '';
     };
 
     programs.git = {
