@@ -278,8 +278,8 @@ in
   services.nix-daemon.enable = true;
   # nix.package = pkgs.nix;
 
-  # Create /etc/bashrc that loads the nix-darwin environment.
-  programs.zsh.enable = true;  # default shell on catalina
+  # Create /etc/zshrc that loads the nix-darwin environment.
+  programs.zsh.enable = true;  # default shell on MacOS since Catalina
   # programs.fish.enable = true;
 
   # Used for backwards compatibility, please read the changelog before changing.
