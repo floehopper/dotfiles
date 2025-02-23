@@ -74,7 +74,7 @@ in
       envExtra = ''
       '';
       initExtra = ''
-        export PATH="${userHome}/.asdf/shims:$PATH"
+        eval "$(mise activate zsh)"
         ulimit -S -n 2048
       '';
     };
