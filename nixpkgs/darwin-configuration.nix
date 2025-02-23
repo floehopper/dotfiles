@@ -160,6 +160,12 @@ in
 
         # for zed editor
         ".zed/"
+
+        # for mise
+        "mise.toml"
+
+        # for secrets used by mise sops plugin
+        ".secrets.json"
       ];
 
       extraConfig = {
