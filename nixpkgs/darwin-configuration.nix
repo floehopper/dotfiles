@@ -57,6 +57,10 @@ in
       --minimal
     '';
 
+    home.file."${userHome}/.screenrc".text = ''
+      defscrollback 100000
+    '';
+
     programs.zsh = {
       enable = true;
       oh-my-zsh = {
