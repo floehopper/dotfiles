@@ -64,6 +64,12 @@ in
       defscrollback 100000
     '';
 
+    # Default npm packages installed by mise
+    # See https://mise.jdx.dev/lang/node.html#default-node-packages
+    home.file."${userHome}/.default-npm-packages".text = ''
+      git-mob
+    '';
+
     programs.zsh = {
       enable = true;
       oh-my-zsh = {
