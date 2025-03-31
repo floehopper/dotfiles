@@ -70,6 +70,22 @@ in
       git-mob
     '';
 
+    # Coauthors for git-mob
+    home.file."${userHome}/.git-coauthors".text = ''
+      {
+        "coauthors": {
+          "cr": {
+            "name": "Chris Roos",
+            "email": "chris.roos@gofreerange.com"
+          },
+          "cl": {
+            "name": "Chris Lowis",
+            "email": "chris.lowis@gofreerange.com"
+          }
+        }
+      }
+    '';
+
     programs.zsh = {
       enable = true;
       oh-my-zsh = {
