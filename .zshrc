@@ -138,3 +138,6 @@ export PATH=$PATH:${HOME}/govuk/govuk-docker/exe
 alias k=kubectl
 
 alias z="mise exec -- zed"
+
+alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
