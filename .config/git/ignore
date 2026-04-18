@@ -1,0 +1,28 @@
+# for dotfile management via bare repo
+.dotfiles
+
+# for vim
+*.swp
+
+# for local to-do lists
+TODO
+TODO.md
+
+# for OSX
+.DS_Store
+
+# for VS Code
+.vscode/settings.json
+
+# for brew bundle
+#.Brewfile
+#.Brewfile.lock.json
+
+# for zed editor
+.zed/
+
+# for mise
+mise.toml
+
+# for secrets used by mise sops plugin
+.secrets.json

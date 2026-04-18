@@ -1,0 +1,92 @@
+[user]
+	name = James Mead
+	email = james@floehopper.org
+
+  # 1Password-based config for signing git commits
+  # See https://developer.1password.com/docs/ssh/git-commit-signing
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJXhBL4fySxImt3eVqEFaCuJTNu8V8+FqkOBvY3GQggj
+
+[gpg]
+	format = ssh
+
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+	allowedSignersFile = /Users/jamesmead/.ssh/allowed_signers
+
+[init]
+	defaultbranch = main
+
+[core]
+	excludesfile = /Users/jamesmead/.config/git/ignore
+  editor = vim
+  # Use built-in MacOS ssh binary to support UseKeychain directive in SSH config
+  # Use specific SSH key by default
+  sshCommand = "/usr/bin/ssh -i ~/.ssh/github-personal.pub"
+
+[branch]
+	autosetuprebase = always
+
+[push]
+  # push the current branch back to the tracked/upstream branch
+  # but refuse to push if the upstream branch’s name is different from the local one
+  default = simple
+  autosetupremote = true
+
+[rebase]
+  # allow fixup & squash commits
+  autosquash = true
+
+  # this means that you can run rebase on a dirty worktree
+  autostash = true
+
+  # rebase dependent branches
+	updaterefs = true
+
+[pull]
+  # rebase using git rebase --rebase-merges so that the local merge commits are included in the rebase
+  rebase = merges
+
+[commit]
+  # display diff in commit editor
+  verbose = true
+
+  gpgsign = true
+
+[merge]
+  # in merge conflicts show original source as well as changes by both sides
+  conflictstyle = zdiff3
+
+[rerere]
+  enabled = true
+
+[diff]
+  algorithm = histogram
+
+[status]
+  # when using `git status` & `git commit` show individual files in untracked directories
+  showUntrackedfiles = all
+
+[pager]
+  branch = false
+  stash = false
+
+[help]
+  autocorrect = prompt
+
+[alias]
+  st = status -sb
+  ci = commit -v
+  co = checkout
+  cp = cherry-pick
+  br = branch
+  rb = rebase
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+
+[includeIf "gitdir:~/Code/alphagov/**"]
+  path = ~/.config/git/gds.inc
+
+[includeIf "gitdir:~/Code/freerange/**"]
+  path = ~/.config/git/gfr.inc
+
+[includeIf "gitdir:~/Code/NHSDigital/**"]
+  path = ~/.config/git/nhs.inc
