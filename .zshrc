@@ -131,12 +131,6 @@ export LESS="-R" # Prevent less from escaping xterm color control chars that app
 
 export HOMEBREW_NO_ENV_HINTS=1
 
-# GDS-related config
-unalias gds # Prevent ohmyzsh git plugin alias interfering with gds-cli
-eval "$(gds shell-completion zsh)"
-export PATH=$PATH:${HOME}/govuk/govuk-docker/exe
-alias k=kubectl
-
 alias z="mise exec -- zed"
 
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
