@@ -131,7 +131,7 @@ export LESS="-R" # Prevent less from escaping xterm color control chars that app
 
 export HOMEBREW_NO_ENV_HINTS=1
 
-alias z="mise exec -- zed"
+alias z="mise exec -- zed --classic"
 
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
