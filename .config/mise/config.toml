@@ -1,3 +1,6 @@
 [settings]
 idiomatic_version_file_enable_tools = ["node", "ruby", "python"]
 disable_tools = ['postgres']
+
+[tools]
+ruby = "4.0"
