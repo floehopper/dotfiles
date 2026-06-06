@@ -25,6 +25,7 @@
 
 [branch]
 	autosetuprebase = always
+	sort = committerdate
 
 [push]
   # push the current branch back to the tracked/upstream branch
