@@ -41,5 +41,6 @@ cask "vivaldi"
 cask "vlc"
 cask "whatsapp"
 cask "zed"
+cask "zen"
 
 mas "Things", id: 904280696
