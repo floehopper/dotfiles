@@ -119,6 +119,7 @@ setopt SHARE_HISTORY
 unsetopt EXTENDED_HISTORY
 
 eval "$(mise activate zsh)"
+alias z="mise exec -- zed --classic"
 
 ulimit -S -n 2048
 
@@ -131,7 +132,4 @@ export LESS="-R" # Prevent less from escaping xterm color control chars that app
 
 export HOMEBREW_NO_ENV_HINTS=1
 
-alias z="mise exec -- zed --classic"
-
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
