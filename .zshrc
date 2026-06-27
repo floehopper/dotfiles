@@ -127,6 +127,9 @@ alias d="git diff"
 alias ls="ls -l"
 alias s="git status"
 
+alias bi="bundle install"
+alias be="bundle exec"
+
 export EDITOR="vim"
 export LESS="-R" # Prevent less from escaping xterm color control chars that appear in Rails log file
 
