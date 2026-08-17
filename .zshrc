@@ -138,3 +138,5 @@ export HOMEBREW_NO_ENV_HINTS=1
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 eval "$(starship init zsh)"
+eval "$(zed --completions zsh)"
+
