@@ -1,5 +1,9 @@
 autoload -Uz compinit
-compinit
+if [[ -n ~/.zcompdump(#qNmh-24) ]]; then
+  compinit -C
+else
+  compinit
+fi
 
 zstyle ':completion:*' menu select
 
