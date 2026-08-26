@@ -25,6 +25,7 @@ brew "stripe"
 brew "yarn"
 brew "yt-dlp"
 brew "vips"
+brew "zsh"
 
 cask "adobe-digital-editions"
 cask "avg-antivirus"
