@@ -1,6 +1,7 @@
 brew "actionlint"
 brew "argo"
 brew "awscli"
+brew "bitwarden-cli"
 brew "ffmpeg"
 brew "gh"
 brew "ghostscript"
