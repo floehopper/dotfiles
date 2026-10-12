@@ -23,6 +23,7 @@ TODO.md
 
 # for mise
 mise.toml
+mise.local.toml
 
 # for secrets used by mise sops plugin
 .secrets.json
