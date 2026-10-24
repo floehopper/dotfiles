@@ -46,6 +46,8 @@ alias be="bundle exec"
 export EDITOR="vim"
 export LESS="-R" # Prevent less from escaping xterm color control chars that appear in Rails log file
 
+export SSH_AUTH_SOCK="$HOME/.bitwarden-ssh-agent.sock"
+
 export HOMEBREW_NO_ENV_HINTS=1
 
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
